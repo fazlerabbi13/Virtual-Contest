@@ -14,7 +14,7 @@ int main() {
     }
 
     // Step 1: Sort the skill levels
-    // sort(a.begin(), a.end());
+    sort(a.begin(), a.end());
 
     // Step 2: Two pointers / sliding window
     // int l = 0, best = 0;
