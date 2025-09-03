@@ -2,10 +2,14 @@
 using namespace std;
 
 int main() {
-    int h1, m1, h2, m2;
-    char c;
 
-    // Input format: hh:mm
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    int h1, m1, h2, m2;
+    char c = ':';
+
+     // Input format: hh:mm
     cin >> h1 >> c >> m1;
     cin >> h2 >> c >> m2;
 
@@ -20,9 +24,13 @@ int main() {
     int h3 = mid / 60;
     int m3 = mid % 60;
 
-    // Print in hh:mm format with leading zeros
-    cout << setw(2) << setfill('0') << h3 << ":"
-         << setw(2) << setfill('0') << m3 << endl;
+   
+    // Print with leading zeros manually
+    if (h3 < 10) cout << "0";
+    cout << h3 << ":";
+
+    if (m3 < 10) cout << "0";
+    cout << m3 << endl;
 
     return 0;
 }
