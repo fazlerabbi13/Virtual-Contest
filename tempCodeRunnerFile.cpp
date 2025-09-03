@@ -1,0 +1,1 @@
+Convert back to hours and minutes

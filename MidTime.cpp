@@ -17,8 +17,8 @@ int main() {
     int mid = start + (end - start) / 2;
 
     // Convert back to hours and minutes
-    // int h3 = mid / 60;
-    // int m3 = mid % 60;
+    int h3 = mid / 60;
+    int m3 = mid % 60;
 
     // Print in hh:mm format with leading zeros
     // cout << setw(2) << setfill('0') << h3 << ":"
