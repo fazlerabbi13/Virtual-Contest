@@ -17,16 +17,16 @@ int main() {
     sort(a.begin(), a.end());
 
     // Step 2: Two pointers / sliding window
-    // int l = 0, best = 0;
-    // for (int r = 0; r < n; r++) {
-    //     while (a[r] - a[l] > 5) {
+    int l = 0, best = 0;
+    for (int r = 0; r < n; r++) {
+        while (a[r] - a[l] > 5) {
            
-    //         l++;  
-    //     }
-    //     best = max(best, r - l + 1);
-    // }
+            l++;  
+        }
+        best = max(best, r - l + 1);
+    }
 
-    // cout << best << "\n";
+    cout << best << "\n";
 
     return 0;
 }
