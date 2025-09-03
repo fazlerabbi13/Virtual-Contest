@@ -21,8 +21,8 @@ int main() {
     int m3 = mid % 60;
 
     // Print in hh:mm format with leading zeros
-    // cout << setw(2) << setfill('0') << h3 << ":"
-    //      << setw(2) << setfill('0') << m3 << endl;
+    cout << setw(2) << setfill('0') << h3 << ":"
+         << setw(2) << setfill('0') << m3 << endl;
 
     return 0;
 }
